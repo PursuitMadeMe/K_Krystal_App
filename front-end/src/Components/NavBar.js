@@ -1,9 +1,23 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 
-function NavBar() {
+export default function NavBar() {
   return (
-    <div>NavBar</div>
-  )
-}
+    <nav className="navbar">
+      <Link to="/krystals" className="link">
+        <h1 className='orange'>KRYSTALS</h1>
+      </Link>
 
-export default NavBar
+    <div>
+      <Link to="/">
+      <button className="home-button">HOME</button>
+        </Link>
+
+
+        <Link to="/snacks/new">
+      <button className="new-button">NEW KRYSTAL</button>
+        </Link>
+    </div>
+     
+    </nav>
+  );
+}

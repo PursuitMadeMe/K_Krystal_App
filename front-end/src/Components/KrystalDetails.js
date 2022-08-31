@@ -1,9 +1,19 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 
-function KrystalDetails() {
+
+function Krystal({ krystal }) {
+  // console.log(`Line 3: ${snack.image}`);
   return (
-    <div>KrystalDetails</div>
-  )
+    <div className="krystals">
+      <Link to={`/krystals/${krystal.id}`}>
+        <>
+          <img src={krystal.image} alt={krystal.name}></img>
+          <p>{krystal.name}</p>
+          
+        </>
+      </Link>
+    </div>
+  );
 }
 
-export default KrystalDetails
+export default Krystal;

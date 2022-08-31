@@ -2,7 +2,9 @@ import React from 'react'
 
 function Home() {
   return (
-    <div></div>
+    <div>
+        <h1>Kim's Krystal Healing App</h1>
+    </div>
   )
 }
 

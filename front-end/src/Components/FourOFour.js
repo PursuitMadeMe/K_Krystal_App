@@ -2,7 +2,9 @@ import React from 'react'
 
 function FourOFour() {
   return (
-    <div>FourOFour</div>
+    <div>
+        <h2>No Krystal Found</h2>
+    </div>
   )
 }
 
