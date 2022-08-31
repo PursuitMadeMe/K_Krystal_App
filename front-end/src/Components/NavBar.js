@@ -13,7 +13,7 @@ export default function NavBar() {
         </Link>
 
 
-        <Link to="/snacks/new">
+        <Link to="/krystals/new">
       <button className="new-button">NEW KRYSTAL</button>
         </Link>
     </div>

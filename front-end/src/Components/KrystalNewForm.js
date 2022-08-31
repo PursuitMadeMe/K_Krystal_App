@@ -124,7 +124,7 @@ function KrystalNewForm() {
           <input value={"Sumbit"} type="submit" />
           <br />
           <br />
-          <Link to={`/snacks`}>
+          <Link to={`/krystals`}>
             <button>BACK</button>
             <br></br>
           </Link>
