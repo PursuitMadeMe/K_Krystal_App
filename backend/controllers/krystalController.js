@@ -38,6 +38,7 @@ krystals.get("/:id", async (req, res) => {
 krystals.post("/", checkName, checkBooleen, async (req, res) => {
     try {
       const krystal = await createKrystal(req.body);
+      console.log("IN ROUTES: ",krystal)
       res.json(krystal);
     } catch (error) {
       res.status(422).json({ error: error });

@@ -25,8 +25,9 @@ const createKrystal = async (krystal) => {
     try {
       const newKrystal = await db.one(
         "INSERT INTO krystals (name, healing, chakra, image, numerology, category, is_favorite) VALUES($1, $2, $3, $4, $5, $6, $7) RETURNING *",
-        [krystal.name, krystal.healing, krystal.image, krystal.numerology, krystal.category, krystal.is_favorite]
+        [krystal.name, krystal.healing,krystal.chakra, krystal.image, krystal.numerology, krystal.category, krystal.is_favorite]
       );
+      console.log("NEW CRYSTAL : ",newKrystal)
       return newKrystal;
     } catch (error) {
       return error;
