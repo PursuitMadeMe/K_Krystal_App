@@ -40,7 +40,7 @@ krystals.post("/", checkName, checkBooleen, async (req, res) => {
       const krystal = await createKrystal(req.body);
       res.json(krystal);
     } catch (error) {
-      res.status(400).json({ error: error });
+      res.status(422).json({ error: error });
     }
   });
 
@@ -53,7 +53,7 @@ krystals.put("/:id", checkBooleen, checkName, async (req, res) => {
     if (updatedKrystal.id) {
       res.status(200).json(updatedKrystal);
     } else {
-      res.status(422).json({ error: "Krystal not updated (line62)" });
+      res.status(422).json({ error: "Krystal not updated (line48)" });
     }
   });
 
@@ -65,7 +65,7 @@ krystals.delete("/:id", async (req, res) => {
     if (deletedKrystal.id) {
       res.status(200).json(deletedKrystal);
     } else {
-      res.status(422).json("Snack not found");
+      res.status(400).json("Snack not found");
     }
   });
 

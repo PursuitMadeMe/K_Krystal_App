@@ -24,8 +24,8 @@ const getAllKrystals = async () => {
 const createKrystal = async (krystal) => {
     try {
       const newKrystal = await db.one(
-        "INSERT INTO krystals (name, healing, chakra, url, numerology, category, is_favorite) VALUES($1, $2, $3, $4, $5, $6, $7) RETURNING *",
-        [krystal.name, krystal.healing, krystal.url, krystal.category, ]
+        "INSERT INTO krystals (name, healing, chakra, image, numerology, category, is_favorite) VALUES($1, $2, $3, $4, $5, $6, $7) RETURNING *",
+        [krystal.name, krystal.healing, krystal.image, krystal.numerology, krystal.category, krystal.is_favorite]
       );
       return newKrystal;
     } catch (error) {
@@ -37,19 +37,19 @@ const createKrystal = async (krystal) => {
 const updateKrystal = async (krystal, id) => {
     try {
       const updatedKrystal = await db.one(
-        "UPDATE krystals SET name=$1, healing=$2, chakra=$3, url=$4, numerology=$5, category=$6, is_favorite=$7  WHERE id=$8 RETURNING *",
+        "UPDATE krystals SET name=$1, healing=$2, chakra=$3, image=$4, numerology=$5, category=$6, is_favorite=$7  WHERE id=$8 RETURNING *",
         [
           krystal.name,
           krystal.healing,
           krystal.chakra,
-          krystal.url,
+          krystal.image,
           krystal.numerology,
           krystal.category,
           krystal.is_favorite,
           id,
         ]
       );
-      console.log(updatedKrystal, "!!!!!!!!!!!!!!!!!!!!!!!!!");
+      console.log(updatedKrystal, "GOOD VIBES");
       return updatedKrystal;
     } catch (error) {
       console.log("NO UPDATE");
