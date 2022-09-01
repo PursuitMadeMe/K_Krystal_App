@@ -86,11 +86,15 @@ function Krystals() {
       <select onChange={handleChange}>
       <br/>
       <br/>
+      <br/>
 
         <option value="Select A Healing Property"> -- Select A Healing Property </option>
         {healingProperties.map((prop) => <option value={prop.value}>{prop.label}</option>)}
         </select>
-        
+        <br/>
+        <br/>
+
+{/* Select menu that returns krystal with match healing properties */}
 
         {krystals.map((krystal, index) => {
           return <Krystal krystal={krystal} index={index} />;

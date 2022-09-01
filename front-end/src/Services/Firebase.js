@@ -21,12 +21,15 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-
+// create an instance of authentication and set default language
 export const auth = getAuth();
 auth.useDeviceLanguage();
 
+// create a provider for any authentication method we may be using. (facebook, twitter, email/password etc.). For this lesson we will use Google Oauth.
 const googleProvider = new GoogleAuthProvider()
 
+
+// Export functions that use the signInWithPopUp() method we get from firebase, passing in whatever provider we created and our getAuth() istance, auth.
 export const signInWithGoogle = () => {
     try {
   //the signInWithPopUp() method accepts ANY provider we create. This is all our authentication logic
@@ -39,6 +42,7 @@ export const signInWithGoogle = () => {
     }
   };
 
+//   Don't forget a sign out method!
   export const logOut = async () =>{
     try {
       await signOut(auth)

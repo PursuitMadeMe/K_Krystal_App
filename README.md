@@ -83,7 +83,6 @@ It is recommended that you open a new terminal tab that will be dedicated to run
 - `touch .env`
 
 **.env**
-
 ```
 REACT_APP_API_URL=http://localhost:3003
 ```
@@ -97,6 +96,8 @@ REACT_APP_API_URL=http://localhost:3003
 - touch Home.js NavBar.js Krystals.js Krystal.js KrystalDetails.js KrystalNewForm.js KrystalEditForm.js FourOFour.js
 
 
+### Firebase setup
+- https://github.com/joinpursuit/8.4-Lecture-Notes/tree/main/MODULE4/FirebaseAuth/firebase-react
 
 
 Miro: 

@@ -5,6 +5,7 @@ import { signInWithGoogle, logOut } from "../Services/Firebase";
 import Home from "../Pages/Home"
 
 
+// Lets save the state of our UserContext and create a useEffect() to listen for changes and connect our functions to our buttons.
 
 export const Login = () => {
   const user = useContext(UserContext);

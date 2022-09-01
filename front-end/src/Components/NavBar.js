@@ -10,7 +10,7 @@ export default function NavBar() {
       </Link>
 
       <Link to="/krystals" className="link">
-        <h1 className='orange'>KRYSTALS</h1>
+        <h1 className='orange'>HEALING KRYSTALS</h1>
       </Link>
 
     <div>
