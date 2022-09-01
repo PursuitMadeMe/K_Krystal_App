@@ -92,6 +92,12 @@ REACT_APP_API_URL=http://localhost:3003
 - `npm install axios
 - `npm start` - make sure your React app can start
 
+- mkdir src/Components
+- cd Components
+- touch Home.js NavBar.js Krystals.js Krystal.js KrystalDetails.js KrystalNewForm.js KrystalEditForm.js FourOFour.js
+
+
+
 
 Miro: 
-Trello: 
+Trello: https://trello.com/b/EW0q0eGQ/kim-krystal-app

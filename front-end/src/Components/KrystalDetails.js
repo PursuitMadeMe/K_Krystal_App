@@ -42,17 +42,18 @@ function KrystalDetails() {
   return (
     <div className="krystal-details">
 
-      <div className="krytal-detail">
 
       <section className ='krystal-visual'>
+      <h3>{krystal.is_favorite ? <span>💎</span> : null} {krystal.name}</h3>
 
       <h2 className='krystal'>{krystal.name} </h2>
+      <h3>{krystal.healing}</h3>
       <img src={krystal.image} alt={krystal.name} />
-      </section>
-      <section className="krystal-info">
+      <h3>Good for: {krystal.category}</h3>
 
       </section>
-      </div>
+      
+    
 <br/>
       <Link to={`/krystals`}>
         <button className="back-button">Back</button>
