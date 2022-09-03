@@ -14,11 +14,11 @@ function KrystalEditForm() {
   const [krystal, setKrystal] = useState({
     name: "",
     healing: "",
-    chakra: "",
+    url: "",
     numerology: 0,
+    chakra: "",
     category: "",
     is_favorite: false,
-    url: "",
   });
 
   useEffect(() => {
@@ -32,10 +32,10 @@ function KrystalEditForm() {
     axios
       .put(`${API}/krystals/${index}`, krystal)
       .then((res) => {
-        console.log("EDIT")
+        console.log("EDIT");
         setKrystal(res.data);
-        console.log("Edit page: ",krystal)
-        console.log("Edit page res data: ",res.data)
+        console.log("Edit page: ", krystal);
+        console.log("Edit page res data: ", res.data);
         navigate(`/krystals/${index}`);
       })
       .catch((error) => console.error(error));
@@ -56,6 +56,10 @@ function KrystalEditForm() {
     setKrystal({ ...krystal, [e.target.id]: e.target.value });
   };
 
+  const handleCheckBox = () => {
+    setKrystal({ ...krystal, is_favorite: !krystal.is_favorite });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     updateKrystal();
@@ -63,19 +67,10 @@ function KrystalEditForm() {
 
   return (
     <div className="edit">
-      <h2>Edit Krystal</h2>
-      <br />
-      <br />
-      <br />
-      <br />
-      <section>
-      </section>
-      <br />
-      <br />
-      <fieldset>
         <form onSubmit={handleSubmit}>
-          <br></br>
-          <label>Krystal</label>
+      <h2>Edit Krystal</h2>
+      <fieldset>
+      <label htmlFor="name">Krystal Name</label>
           <input
             id="name"
             value={krystal.name}
@@ -83,8 +78,7 @@ function KrystalEditForm() {
             placeholder="Name"
             onChange={handleTextChange}
           />
-
-          <label>Healing</label>
+          <label htmlFor="healing">Healing Property</label>
           <input
             id="healing"
             value={krystal.healing}
@@ -92,8 +86,7 @@ function KrystalEditForm() {
             placeholder="Healing"
             onChange={handleTextChange}
           />
-
-          <label>Chakra</label>
+          <label htmlFor="chakra">Chakra</label>
           <input
             id="chakra"
             value={krystal.chakra}
@@ -101,8 +94,7 @@ function KrystalEditForm() {
             placeholder="Chakra"
             onChange={handleTextChange}
           />
-
-          <label>Numerology</label>
+          <label htmlFor="numerology">Numerology</label>
           <input
             id="numerology"
             value={krystal.numerology}
@@ -110,8 +102,7 @@ function KrystalEditForm() {
             placeholder="Numerology"
             onChange={handleNumberChange}
           />
-
-          <label>Category</label>
+          <label htmlFor="category">Category</label>
           <input
             id="category"
             value={krystal.category}
@@ -119,7 +110,6 @@ function KrystalEditForm() {
             placeholder="Category"
             onChange={handleTextChange}
           />
-
           <label for="image">Enter an https:// URL:</label>
           <input
             type="url"
@@ -130,6 +120,14 @@ function KrystalEditForm() {
             pattern="https://.*"
             size="30"
             onChange={handleUrlChange}
+          />
+           <br />
+          <label for="is_favorite">Favorite:</label>
+          <input
+            id="is_favorite"
+            type="checkbox"
+            onChange={handleCheckBox}
+            checked={krystal.is_favorite}
           />
           <br />
           <br />
@@ -145,8 +143,8 @@ function KrystalEditForm() {
             <br></br>
           </Link>
           <br></br>
-        </form>
       </fieldset>
+        </form>
     </div>
   );
 }

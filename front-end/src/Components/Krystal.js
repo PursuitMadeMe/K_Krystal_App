@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 function Krystal({ krystal }) {
   // console.log(`Line 3: ${snack.image}`);
   return (
@@ -9,7 +8,6 @@ function Krystal({ krystal }) {
         <>
           <img src={krystal.image} alt={krystal.name}></img>
           <p>{krystal.name}</p>
-          
         </>
       </Link>
     </div>

@@ -16,54 +16,45 @@ function Krystals() {
 
   const healingProperties = [
     {
-      label: 'Anxiety',
-      value: 'anxiety',
-  
+      label: "Anxiety",
+      value: "anxiety",
     },
     {
-      label: 'Motivation',
-      value: 'motivation',
-  
+      label: "Motivation",
+      value: "motivation",
     },
     {
-      label: 'Study',
-      value: 'study',
-  
+      label: "Study",
+      value: "study",
     },
     {
-      label: 'Love',
-      value: 'love',
-  
+      label: "Love",
+      value: "love",
     },
     {
-      label: 'Stress',
-      value: 'stress',
-  
+      label: "Stress",
+      value: "stress",
     },
     {
-      label: 'Happiness',
-      value: 'happiness',
-  
+      label: "Happiness",
+      value: "happiness",
     },
     {
-      label: 'Prosperity',
-      value: 'prosperity',
-  
+      label: "Prosperity",
+      value: "prosperity",
     },
     {
-      label: 'Manifestation',
-      value: 'manifestation',
-  
-    }
-  ]
+      label: "Manifestation",
+      value: "manifestation",
+    },
+  ];
 
   const [healing, setHealing] = useState("Select a Healing Property");
 
   const handleChange = (e) => {
     e.preventDefault();
-    setHealing(e.target.value)
+    setHealing(e.target.value);
   };
-
 
   //useEffect is invoked and within the it we have 2 parameters our axios that fetches our API and array of dependencies
   //then we are updating the variable using setSnack SETTING it equal to res.data
@@ -77,24 +68,27 @@ function Krystals() {
   }, []);
   console.log(krystals);
 
-
-
   return (
     <div>
-      <section className='krystals-index'>
-      <br/>
-      <select onChange={handleChange}>
-      <br/>
-      <br/>
-      <br/>
+      <section className="krystals-index">
+        <br />
+        <select onChange={handleChange}>
+          <br />
+          <br />
+          <br />
 
-        <option value="Select A Healing Property"> -- Select A Healing Property </option>
-        {healingProperties.map((prop) => <option value={prop.value}>{prop.label}</option>)}
+          <option value="Select A Healing Property">
+            {" "}
+            -- Select A Healing Property --{" "}
+          </option>
+          {healingProperties.map((prop) => (
+            <option value={prop.value}>{prop.label}</option>
+          ))}
         </select>
-        <br/>
-        <br/>
+        <br />
+        <br />
 
-{/* Select menu that returns krystal with match healing properties */}
+        {/* Select menu that returns krystal with match healing properties */}
 
         {krystals.map((krystal, index) => {
           return <Krystal krystal={krystal} index={index} />;

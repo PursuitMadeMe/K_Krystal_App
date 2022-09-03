@@ -15,7 +15,7 @@ export const LoggedInPage = () => {
   
   useEffect(() => { 
     if(!user) {
-        alert("not logged in - redirecting")
+        alert("Come Back Soon - Ase")
         navigate("/");
       }
     }, [user, navigate]);
@@ -23,13 +23,13 @@ export const LoggedInPage = () => {
   
   const handleLogout = async () => {
     logOut()
-    alert("you've been logged out")
+    alert("You've Logged Out")
   };
   if ( user ){
     return (
       <div>
-        <h1> YOU ARE LOGGED IN : </h1>
-        <h1>Welcome {user.displayName} to Healing Krystals App</h1>
+        <h1> YOU ARE LOGGED IN </h1>
+        <h1>Welcome {user.displayName} to Kim's Krystal Healing App</h1>
         <div>
           {/* <img src = {user.photoURL}
           style={imgStyle}

@@ -6,9 +6,7 @@ import { useNavigate, Link } from "react-router-dom";
 const API = process.env.REACT_APP_API_URL;
 
 function KrystalNewForm() {
-
   const [krystal, setKrystal] = useState({
-    
     name: "",
     healing: "",
     chakra: "",
@@ -41,6 +39,10 @@ function KrystalNewForm() {
     setKrystal({ ...krystal, [e.target.id]: e.target.value });
   };
 
+  const handleCheckBox = () => {
+    setKrystal({ ...krystal, is_favorite: !krystal.is_favorite });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     addKrystal();
@@ -48,20 +50,10 @@ function KrystalNewForm() {
 
   return (
     <div className="new">
-          <h2>New Krystal</h2>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <section>
-      </section>
-      <br />
-      <br />
-      <fieldset>
         <form onSubmit={handleSubmit}>
-          <br></br>
-          <label>Krystal</label>
+      <h2>New Krystal</h2>
+      <fieldset>
+      <label htmlFor="name">Krystal Name</label>
           <input
             id="name"
             value={krystal.name}
@@ -69,8 +61,7 @@ function KrystalNewForm() {
             placeholder="Name"
             onChange={handleTextChange}
           />
-
-          <label>Healing</label>
+          <label htmlFor="healing">Healing Property</label>
           <input
             id="healing"
             value={krystal.healing}
@@ -78,8 +69,7 @@ function KrystalNewForm() {
             placeholder="Healing"
             onChange={handleTextChange}
           />
-
-          <label>Chakra</label>
+          <label htmlFor="chakra">Chakra</label>
           <input
             id="chakra"
             value={krystal.chakra}
@@ -87,8 +77,7 @@ function KrystalNewForm() {
             placeholder="Chakra"
             onChange={handleTextChange}
           />
-
-          <label>Numerology</label>
+          <label htmlFor="numerology">Numerology</label>
           <input
             id="numerology"
             value={krystal.numerology}
@@ -96,8 +85,7 @@ function KrystalNewForm() {
             placeholder="Numerology"
             onChange={handleNumberChange}
           />
-
-          <label>Category</label>
+          <label htmlFor="category">Category</label>
           <input
             id="category"
             value={krystal.category}
@@ -105,7 +93,6 @@ function KrystalNewForm() {
             placeholder="Category"
             onChange={handleTextChange}
           />
-
           <label for="image">Enter an https:// URL:</label>
           <input
             type="url"
@@ -116,6 +103,14 @@ function KrystalNewForm() {
             pattern="https://.*"
             size="30"
             onChange={handleUrlChange}
+          />
+          <br />
+          <label for="is_favorite">Favorite:</label>
+          <input
+            id="is_favorite"
+            type="checkbox"
+            onChange={handleCheckBox}
+            checked={krystal.is_favorite}
           />
           <br />
           <br />
@@ -129,9 +124,9 @@ function KrystalNewForm() {
             <br></br>
           </Link>
           <br />
-        </form>
       </fieldset>
 
+        </form>
       <br />
     </div>
   );
