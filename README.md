@@ -100,5 +100,12 @@ REACT_APP_API_URL=http://localhost:3003
 - https://github.com/joinpursuit/8.4-Lecture-Notes/tree/main/MODULE4/FirebaseAuth/firebase-react
 
 
-Miro: 
+Miro: https://miro.com/app/board/uXjVPaNoy_M=/
 Trello: https://trello.com/b/EW0q0eGQ/kim-krystal-app
+
+Informational Websites:
+https://www.healthline.com/health/what-are-chakras
+https://astrologyanswers.com/article/numerology-the-crystal-connection
+
+Purchase Websites:
+https://www.namaslaygoddess.com/?fbclid=IwAR1y9lP1dcKF2dXvLRyBiWCLt_dtiuZDQFKwDMht_Y0vke2UQXs0OCgjacI

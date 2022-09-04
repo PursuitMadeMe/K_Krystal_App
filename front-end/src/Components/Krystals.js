@@ -14,47 +14,47 @@ function Krystals() {
   //invoking useState and setting the variable snack to an object and setSnack which updates the component
   const [krystals, setKrystals] = useState([]);
 
-  const healingProperties = [
-    {
-      label: "Anxiety",
-      value: "anxiety",
-    },
-    {
-      label: "Motivation",
-      value: "motivation",
-    },
-    {
-      label: "Study",
-      value: "study",
-    },
-    {
-      label: "Love",
-      value: "love",
-    },
-    {
-      label: "Stress",
-      value: "stress",
-    },
-    {
-      label: "Happiness",
-      value: "happiness",
-    },
-    {
-      label: "Prosperity",
-      value: "prosperity",
-    },
-    {
-      label: "Manifestation",
-      value: "manifestation",
-    },
-  ];
+  // const healingProperties = [
+  //   {
+  //     label: "Anxiety",
+  //     value: "anxiety",
+  //   },
+  //   {
+  //     label: "Motivation",
+  //     value: "motivation",
+  //   },
+  //   {
+  //     label: "Study",
+  //     value: "study",
+  //   },
+  //   {
+  //     label: "Love",
+  //     value: "love",
+  //   },
+  //   {
+  //     label: "Stress",
+  //     value: "stress",
+  //   },
+  //   {
+  //     label: "Happiness",
+  //     value: "happiness",
+  //   },
+  //   {
+  //     label: "Prosperity",
+  //     value: "prosperity",
+  //   },
+  //   {
+  //     label: "Manifestation",
+  //     value: "manifestation",
+  //   },
+  // ];
 
-  const [healing, setHealing] = useState("Select a Healing Property");
+  // const [healing, setHealing] = useState("Select a Healing Property");
 
-  const handleChange = (e) => {
-    e.preventDefault();
-    setHealing(e.target.value);
-  };
+  // const handleChange = (e) => {
+  //   e.preventDefault();
+  //   setHealing(e.target.value);
+  // };
 
   //useEffect is invoked and within the it we have 2 parameters our axios that fetches our API and array of dependencies
   //then we are updating the variable using setSnack SETTING it equal to res.data
@@ -71,7 +71,7 @@ function Krystals() {
   return (
     <div>
       <section className="krystals-index">
-        <br />
+        {/* <br />
         <select onChange={handleChange}>
           <br />
           <br />
@@ -86,7 +86,7 @@ function Krystals() {
           ))}
         </select>
         <br />
-        <br />
+        <br /> */}
 
         {/* Select menu that returns krystal with match healing properties */}
 

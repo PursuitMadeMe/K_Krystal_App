@@ -1,5 +1,4 @@
 import React from "react";
-import { URL } from "react";
 
 function Home() {
   return (
@@ -27,8 +26,6 @@ function Home() {
         of your head.{" "}
       </p>
 
-      {/* <URL>https://www.healthline.com/health/what-are-chakras</URL> */}
-
       <img src="../Image4.jpeg" alt="Chakra" width={500} height={500} />
 
       <p>
@@ -47,7 +44,6 @@ function Home() {
         can easily be used together — and when they are, their healing
         properties and clarifying abilities are more enhanced than ever!
       </p>
-      {/* <url={}>https://astrologyanswers.com/article/numerology-the-crystal-connection/</URL> */}
     </div>
   );
 }
