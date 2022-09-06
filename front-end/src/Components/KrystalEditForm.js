@@ -6,6 +6,7 @@ import axios from "axios";
 
 const API = process.env.REACT_APP_API_URL;
 
+// EDIT ROUTE
 function KrystalEditForm() {
   const navigate = useNavigate();
   let { index } = useParams();

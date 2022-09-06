@@ -3,6 +3,8 @@ import { UserContext } from "../Providers/UserProvider";
 import { useNavigate } from "react-router-dom";
 import { signInWithGoogle, logOut } from "../Services/Firebase";
 import Home from "../Pages/Home";
+import "../Components/Login.css"
+
 
 // Lets save the state of our UserContext and create a useEffect() to listen for changes and connect our functions to our buttons.
 

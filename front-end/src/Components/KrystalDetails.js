@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-
+// SHOW ROUTE
 function KrystalDetails() {
   const [krystal, setKrystal] = useState({});
   const { index } = useParams();

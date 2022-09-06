@@ -5,6 +5,7 @@ import { useNavigate, Link } from "react-router-dom";
 
 const API = process.env.REACT_APP_API_URL;
 
+// NEW ROUTE 
 function KrystalNewForm() {
   const [krystal, setKrystal] = useState({
     name: "",

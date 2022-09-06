@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// INDEX ROUTE
 function Krystal({ krystal }) {
 
   return (
