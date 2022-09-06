@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 5% 5%;
     height: 475px;
-    overflow:scroll;
+    /* overflow:scroll; */
     
   }
   
@@ -14,9 +14,9 @@
     padding-bottom: 30px;  
   }
   
-  img{
-    height: 100px;
-    width: 100px;
+  .index-img{
+    height: 150px;
+    width: 150px;
     border-radius: 50%
   }
   
@@ -24,7 +24,10 @@
     text-align: center;
     padding-right: 35px;
     font-size: medium;
-    color: yellowgreen ;
-   
+    color: rgb(146, 38, 146);
   }
   
+  h1:hover{
+    
+    color:rgb(103, 131, 103);
+}

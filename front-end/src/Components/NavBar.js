@@ -5,7 +5,7 @@ export default function NavBar() {
   return (
     <nav className="navbar">
       <Link to="/">
-        <img src="../Image2.jpeg" alt="Krystal" width={50} height={50} />
+        <img src="../Image2.jpeg" alt="Krystal" className="logo" />
       </Link>
 
       <Link to="/krystals" className="link">

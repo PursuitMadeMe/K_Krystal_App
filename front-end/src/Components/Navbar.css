@@ -1,14 +1,20 @@
 .navbar
 {
     background-color:lightgrey;
-    height: 50px;
+    height: 75px;
     box-shadow: 4px 4px 8px rgb(160, 95, 160);
 }
 .logo{
-    height: 50px;
+    height: 60px;
+    width: auto;
     margin-top:-10px;
     padding: -1px;
     float: left;
+}
+
+img{
+    height: 450px;
+    width: 475px;
 }
 .link{
     text-decoration: none;
@@ -17,7 +23,7 @@
 .orange{
 text-align: center;
 font-weight: bold;
-font-size: 30px;
+font-size: 50px;
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .home-button{

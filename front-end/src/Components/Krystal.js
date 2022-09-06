@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 // INDEX ROUTE
 function Krystal({ krystal }) {
 
@@ -7,8 +8,8 @@ function Krystal({ krystal }) {
     <div className="krystals">
       <Link to={`/krystals/${krystal.id}`}>
         <>
-          <img src={krystal.image} alt={krystal.name}></img>
-          <h2>{krystal.name}</h2>
+          <img src={krystal.image} alt={krystal.name} className="index-img"></img>
+          <h3>{krystal.name}</h3>
         </>
       </Link>
 

@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 //importing snacks.js and calling it Snack
 import Krystal from "../Components/Krystal";
+import '../Components/Krystals.css'
+
 
 //importing axios
 import axios from "axios";
