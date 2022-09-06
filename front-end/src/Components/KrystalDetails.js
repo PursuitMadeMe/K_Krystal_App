@@ -33,12 +33,12 @@ function KrystalDetails() {
       <section className="krystal-visual">
         <h3>
           {krystal.is_favorite ? <span>💎</span> : null} {krystal.name}
-        </h3>
+        </h3> 
         <h2 className="krystal">{krystal.name} </h2>
-        <h3>{krystal.healing}</h3>
+        <h3>Healing Property : {krystal.healing}</h3>
         <img src={krystal.image} alt={krystal.name} />
-        <h3>{krystal.numerology}</h3>
-        <h3>{krystal.chakra}</h3>
+        <h3>Numerology : {krystal.numerology}</h3>
+        <h3>Chakra : {krystal.chakra}</h3>
         <h3>Good for: {krystal.category}</h3>
       </section>
 

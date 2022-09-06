@@ -39,6 +39,7 @@
   color: purple;
   border-radius: 6px;
   float: right;
+  align-items: center;
 
 }
 
@@ -50,7 +51,9 @@
   border: 1px solid purple;
   color: purple;
   border-radius: 6px;
-  float: right;
+  /* float: right; */
+  align-items: center;
+
 }
 .delete-button{
   height: 40px;
@@ -59,7 +62,7 @@
   border: 1px solid purple;
   color: purple;
   border-radius: 6px;
-  float: right;
-  gap: 10px;
+  /* float: right; */
+  align-items: center;
 
 }

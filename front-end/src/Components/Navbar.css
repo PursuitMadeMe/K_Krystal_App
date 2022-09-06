@@ -51,8 +51,8 @@ box-shadow:2px 2px 4px rgb(176, 167, 119);
 .new-button:hover{
     background-image: linear-gradient(rgb(180, 115, 126),rgb(217, 211, 173));
 }
-.menudiv{
+/* .menudiv{
     
     background-color: lightgrey;
     
-}
+} */

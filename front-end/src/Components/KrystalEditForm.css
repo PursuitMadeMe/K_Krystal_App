@@ -48,6 +48,7 @@ input {
     color: purple;
     border-radius: 6px;
     float: left;
+    
 }
 .formbtnb:hover{
     background-color: lightgoldenrodyellow;

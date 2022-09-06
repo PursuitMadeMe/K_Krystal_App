@@ -23,10 +23,10 @@ export const Login = () => {
     <div>
       <section>
         <div>
-          <button onClick={signInWithGoogle}>Sign in with Google</button>
+          <button className="signin" onClick={signInWithGoogle}>Sign in with Google</button>
           <br/>
 
-          <button onClick={logOut}> Sign Out</button>
+          <button className="signout" onClick={logOut}> Sign Out</button>
         </div>
         <br/>
         <Home />
