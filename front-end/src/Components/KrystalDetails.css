@@ -1,0 +1,31 @@
+.back-button{
+    height: 40px;
+    width: 100px;
+    background-color: rgb(246, 233, 215);
+    border: 1px solid purple;
+    color: purple;
+    border-radius: 6px;
+    float: right;
+
+}
+
+.edit-button{
+
+    height: 40px;
+    width: 100px;
+    background-color: rgb(246, 233, 215);
+    border: 1px solid purple;
+    color: purple;
+    border-radius: 6px;
+    float: right;
+}
+.delete-button{
+    height: 40px;
+    width: 100px;
+    background-color: rgb(246, 233, 215);
+    border: 1px solid purple;
+    color: purple;
+    border-radius: 6px;
+    float: right;
+
+}
