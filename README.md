@@ -51,8 +51,6 @@ PG_DATABASE=krystals_dev
 - Visit http://localhost:3003/krystals/ and make sure you see some krystal data in the form of an array of objects
 - `npm install express dotenv cors` - seed the table(s) with some data
 
-
-
 - touch .env .gitignore server.js app.js
 
 - `npm install pg-promise`
@@ -97,9 +95,9 @@ REACT_APP_API_URL=http://localhost:3003
 
 
 ### Firebase setup
-- https://github.com/joinpursuit/8.4-Lecture-Notes/tree/main/MODULE4/FirebaseAuth/firebase-react
+- https://github.com/joinpursuit/8.4-Lecture-Notes/tree/main/MODULE4/FirebaseAuth/firebase-react & Zane
 
-
+************************************************************************************************************************
 Miro: https://miro.com/app/board/uXjVPaNoy_M=/
 Trello: https://trello.com/b/EW0q0eGQ/kim-krystal-app
 

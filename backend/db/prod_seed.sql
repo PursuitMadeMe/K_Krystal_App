@@ -1,4 +1,3 @@
-\c cta_dev;
 
 INSERT INTO test krystals VALUES (name, healing, chakra, image, numerology, category, is_favorite) VALUES
 ('Black Tourmaline', 'Helps emotional stability', 'Root', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9AjZRqxl_sHsJJe0dcyferLaOFyT8SJMXWCKsWuPee8y6nMj9tBPPaHOGo9VNEvIRhg&usqp=CAU', 3, 'anxiety/protection/balance', 'true'),

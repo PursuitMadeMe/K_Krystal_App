@@ -1,8 +1,3 @@
-DROP DATABASE IF EXISTS cta_dev;
-CREATE DATABASE cta_dev;
-
-\c cta_dev;
-
 DROP DATABASE IF EXISTS test;
 
 
