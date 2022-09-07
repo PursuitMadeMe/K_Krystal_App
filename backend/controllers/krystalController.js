@@ -1,18 +1,13 @@
 const express = require("express");
+// creates a server route to localhost:3003/krystals
 const krystals = express.Router();
+// imports the RESTFUL routes to our seed data base
 const { getAllKrystals, getKrystal, createKrystal, updateKrystal, deleteKrystal } = require("../queries/krystals");
+// imports checks to receive correct RESTFUL route
 const { checkName, checkBooleen } = require("../validations/checkKrystals");
 
-// // INDEX
-// krystals.get("/", async (req, res) => {});
 
-
-// // INDEX
-// krystals.get("/", (req, res) => {
-//   res.json({ status: "ok" });
-// });
-
-// INDEX - Read
+// INDEX - Read and return all resources if available or return 500 error status : localhost:3003/krystals
 krystals.get("/", async (req, res) => {
     const allKrystals = await getAllKrystals();
     if (allKrystals[0]) {
@@ -22,7 +17,7 @@ krystals.get("/", async (req, res) => {
     }
   });
 
-  // SHOW - Read
+  // SHOW - Read and return resources at wild card (/:id) - krystal is getKrystalroute  from databasse at wildcard or return 404 error : localhost:3003/krystals/3
 krystals.get("/:id", async (req, res) => {
     const { id } = req.params;
     const krystal = await getKrystal(id);
@@ -34,7 +29,7 @@ krystals.get("/:id", async (req, res) => {
   });
 
 
-// CREATE
+// CREATE - create a new resource , if the name is present and boolean value is accurate - krystal is createKrystal route from database or 422 error : localhost:3003/krystals/new
 krystals.post("/", checkName, checkBooleen, async (req, res) => {
     try {
       const krystal = await createKrystal(req.body);
@@ -45,7 +40,7 @@ krystals.post("/", checkName, checkBooleen, async (req, res) => {
     }
   });
 
-// UPDATE
+// UPDATE - update the resource at wild card , if the name is present and boolean value is accurate - krystal is updateKrystal route from database or 422 error : localhost:3003/krystals/3/edit
 krystals.put("/:id", checkBooleen, checkName, async (req, res) => {
     const { id } = req.params;
     console.log(id);
@@ -59,7 +54,8 @@ krystals.put("/:id", checkBooleen, checkName, async (req, res) => {
   });
 
 
-// DELETE
+// DELETE - delete the resource at wild card , if the name is present and boolean value is accurate - krystal is deleteKrystal route from database or 422 error : localhost:3003/krystals/3/delete
+
 krystals.delete("/:id", async (req, res) => {
     const { id } = req.params;
     const deletedKrystal = await deleteKrystal(id);
