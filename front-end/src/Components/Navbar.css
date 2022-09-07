@@ -7,7 +7,7 @@
 .logo{
     height: 60px;
     width: auto;
-    margin-top:-10px;
+    margin-top:10px;
     padding: -1px;
     float: left;
 }
@@ -34,7 +34,8 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     color:whitesmoke;
     margin-top: -10px;
     box-shadow:2px 2px 4px rgb(178, 169, 121);
-   
+    float: right;
+
 }
 .home-button:hover{
     background-image: linear-gradient(rgb(180, 115, 126),rgb(217, 211, 173));
@@ -47,6 +48,8 @@ border:none;
 color:whitesmoke;
 margin-top: -10px;
 box-shadow:2px 2px 4px rgb(176, 167, 119);
+float: right;
+
 }
 .new-button:hover{
     background-image: linear-gradient(rgb(180, 115, 126),rgb(217, 211, 173));

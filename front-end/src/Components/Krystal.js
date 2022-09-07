@@ -9,7 +9,7 @@ function Krystal({ krystal }) {
       <Link to={`/krystals/${krystal.id}`}>
         <>
           <img src={krystal.image} alt={krystal.name} className="index-img"></img>
-          <h3>{krystal.name}</h3>
+          <h2>{krystal.name}</h2>
         </>
       </Link>
 
