@@ -63,6 +63,8 @@ function KrystalNewForm() {
             placeholder="Name"
             onChange={handleTextChange}
           />
+          <br/>
+          <br/>
           <label htmlFor="healing">Healing Property</label>
           <input
             id="healing"
@@ -71,6 +73,8 @@ function KrystalNewForm() {
             placeholder="Healing"
             onChange={handleTextChange}
           />
+          <br/>
+          <br/>
           <label htmlFor="chakra">Chakra</label>
           <input
             id="chakra"
@@ -79,6 +83,8 @@ function KrystalNewForm() {
             placeholder="Chakra"
             onChange={handleTextChange}
           />
+          <br/>
+          <br/>
           <label htmlFor="numerology">Numerology</label>
           <input
             id="numerology"
@@ -87,6 +93,8 @@ function KrystalNewForm() {
             placeholder="Numerology"
             onChange={handleNumberChange}
           />
+          <br/>
+          <br/>
           <label htmlFor="category">Category</label>
           <input
             id="category"
@@ -95,6 +103,8 @@ function KrystalNewForm() {
             placeholder="Category"
             onChange={handleTextChange}
           />
+          <br/>
+          <br/>
           <label for="image">Enter an https:// URL:</label>
           <input
             type="url"
@@ -107,6 +117,7 @@ function KrystalNewForm() {
             onChange={handleUrlChange}
           />
           <br />
+          <br/>
           <label for="is_favorite">Favorite:</label>
           <input
             id="is_favorite"
@@ -116,18 +127,16 @@ function KrystalNewForm() {
           />
           <br />
           <br />
-          <br />
-
           <input value={"Sumbit"} type="submit" />
           <br />
           <br />
+          <br/>
           <Link to={`/krystals`}>
             <button>BACK</button>
             <br></br>
           </Link>
           <br />
       </fieldset>
-
         </form>
       <br />
     </div>

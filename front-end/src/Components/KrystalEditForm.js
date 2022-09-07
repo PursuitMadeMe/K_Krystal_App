@@ -81,6 +81,8 @@ function KrystalEditForm() {
             placeholder="Name"
             onChange={handleTextChange}
           />
+          <br/>
+          <br/>
           <label htmlFor="healing">Healing Property</label>
           <input
             id="healing"
@@ -89,6 +91,8 @@ function KrystalEditForm() {
             placeholder="Healing"
             onChange={handleTextChange}
           />
+          <br/>
+          <br/>
           <label htmlFor="chakra">Chakra</label>
           <input
             id="chakra"
@@ -97,6 +101,8 @@ function KrystalEditForm() {
             placeholder="Chakra"
             onChange={handleTextChange}
           />
+          <br/>
+          <br/>
           <label htmlFor="numerology">Numerology</label>
           <input
             id="numerology"
@@ -105,6 +111,8 @@ function KrystalEditForm() {
             placeholder="Numerology"
             onChange={handleNumberChange}
           />
+          <br/>
+          <br/>
           <label htmlFor="category">Category</label>
           <input
             id="category"
@@ -113,6 +121,8 @@ function KrystalEditForm() {
             placeholder="Category"
             onChange={handleTextChange}
           />
+          <br/>
+          <br/>
           <label for="image">Enter an https:// URL:</label>
           <input
             type="url"
@@ -125,6 +135,7 @@ function KrystalEditForm() {
             onChange={handleUrlChange}
           />
            <br />
+           <br/>
           <label for="is_favorite">Favorite:</label>
           <input
             id="is_favorite"
@@ -134,13 +145,10 @@ function KrystalEditForm() {
           />
           <br />
           <br />
-          <br />
-
           <input value={"Sumbit"} type="submit" />
           <br></br>
           <br></br>
           <br></br>
-
           <Link to={`/krystals/${index}`}>
             <button>BACK</button>
             <br></br>

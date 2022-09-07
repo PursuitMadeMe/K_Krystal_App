@@ -3,7 +3,7 @@ import '../Pages/Home.css'
 
 function Home() {
   return (
-    <div>
+    <div className="home">
       <h1>Kim's Krystal Healing App</h1>
       {/* Special FONT */}
       <span>
