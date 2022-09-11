@@ -1,5 +1,5 @@
 
-INSERT INTO test krystals VALUES (name, healing, chakra, image, numerology, category, is_favorite) VALUES
+INSERT INTO krystals (name, healing, chakra, image, numerology, category, is_favorite) VALUES
 ('Black Tourmaline', 'Helps emotional stability', 'Root', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9AjZRqxl_sHsJJe0dcyferLaOFyT8SJMXWCKsWuPee8y6nMj9tBPPaHOGo9VNEvIRhg&usqp=CAU', 3, 'anxiety/protection/balance', 'true'),
 ('Lepidolite', 'Helps sooth distrust, depression and stress', 'Heart/ Third Eye/ Crown', 'https://m.media-amazon.com/images/I/81Ze8ZkJ2kL._AC_SL1500_.jpg', 8, 'anxiety/study/adaptation/change', 'true'),
 ('Green Adventurine', 'Increases leadership and decisioon making', 'Heart','https://m.media-amazon.com/images/I/81uGSz8zdOL._AC_SL1500_.jpg', 3,'motivation/prosperity/creativity', 'true'),

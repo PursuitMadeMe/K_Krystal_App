@@ -1,7 +1,4 @@
-DROP DATABASE IF EXISTS test;
-
-
-CREATE TABLE test (
+CREATE TABLE krystals (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
     healing TEXT NOT NULL,
