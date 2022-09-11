@@ -1,9 +1,9 @@
 const express = require("express");
 // creates a server route to localhost:3003/krystals
 const krystals = express.Router();
-// imports the RESTFUL routes to our seed data base
+// imports the CRUD routes to our seed data base
 const { getAllKrystals, getKrystal, createKrystal, updateKrystal, deleteKrystal } = require("../queries/krystals");
-// imports checks to receive correct RESTFUL route
+// imports checks to receive correct CRUD route
 const { checkName, checkBooleen } = require("../validations/checkKrystals");
 
 
