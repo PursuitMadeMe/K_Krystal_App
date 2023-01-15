@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import Krystal from "../Components/Krystal";
+import SearchBar from "../Components/SearchBar";
 import '../Components/Krystals.css'
 
 
 //importing axios
 import axios from "axios";
+// import SearchBar from "./searchBar";
 
 //creating the variable API and setting it equal to process.env.REACT_APP_API_URL
 const API = process.env.REACT_APP_API_URL;
@@ -24,11 +26,12 @@ function Krystals() {
 
 
 
-  let filteredHealing = krystals
+  let filteredKrystals = krystals
 
   if(searchTerm) {
-    filteredHealing = krystals.filter(krystal => {
+    filteredKrystals = krystals.filter(krystal => {
       const healingProperty = `${krystal.healing}`
+      console.log(healingProperty)
       const healingPropertyToLowerCase = healingProperty.toLowerCase()
       const searchTermToLowerCase = searchTerm.toLowerCase()
 
@@ -37,12 +40,16 @@ function Krystals() {
   }
 
   return (
-    <div>
-      <section className="krystals-index">
-        {krystals.map((krystal, index) => {
-          return <Krystal krystal={krystal} index={index} />;
+      <div className="krystals-index">
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+        {filteredKrystals.map((krystal, index) => {
+          return (
+            <div>
+            <Krystal krystal={krystal} index={index} />;
+            </div>
+          )
         })}
-      </section>
+        {filteredKrystals.length === 0 && <div className="krystals__noResults">No Results Found</div>}
     </div>
   );
 }
