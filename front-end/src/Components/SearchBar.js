@@ -10,7 +10,7 @@ const updateSearchTerm = (e) => {
   return (
     <input
     className='searchBar'
-    placeholder='Seach By Healing Property'
+    placeholder='Heal By Chakra'
     value={searchTerm}
     onChange={updateSearchTerm}
     />

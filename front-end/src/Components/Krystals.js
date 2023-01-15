@@ -30,8 +30,10 @@ function Krystals() {
 
   if(searchTerm) {
     filteredKrystals = krystals.filter(krystal => {
-      const healingProperty = `${krystal.healing}`
+      const healingProperty = `${krystal.chakra}`
       console.log(healingProperty)
+      // console.log(`${krystal.chakra}`)
+
       const healingPropertyToLowerCase = healingProperty.toLowerCase()
       const searchTermToLowerCase = searchTerm.toLowerCase()
 
