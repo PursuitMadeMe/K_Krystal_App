@@ -1,5 +1,5 @@
 const express = require("express");
-const rewards = express.Router();
+const healers = express.Router();
 const {
   getAllHealers,
   getHeal,
