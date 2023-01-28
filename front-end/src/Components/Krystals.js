@@ -13,7 +13,7 @@ const API = process.env.REACT_APP_API_URL;
 
 function Krystals() {
   const [krystals, setKrystals] = useState([]);
-
+// search user input bar for krystal mood(anxiety)
   const [searchTerm, setSearchTerm] = useState('')
 
   useEffect(() => {
@@ -34,6 +34,7 @@ function Krystals() {
       console.log(healingProperty)
       // console.log(`${krystal.chakra}`)
 
+      // creating a safety for case sensitive input from the user
       const healingPropertyToLowerCase = healingProperty.toLowerCase()
       const searchTermToLowerCase = searchTerm.toLowerCase()
 

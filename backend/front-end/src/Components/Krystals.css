@@ -1,0 +1,79 @@
+.krystals-index{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5% 5%;
+    height: 475px;
+    /* overflow:scroll; */
+    
+  }
+  
+  .krystals{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    padding-bottom: 30px;  
+  }
+  
+  .index-img{
+    height: 150px;
+    width: 150px;
+  }
+  h5{
+    text-align: auto;
+    padding-right: 35px;
+    font-size: medium;
+    color: black;
+  }
+  h3{
+    text-align: auto;
+    padding-right: 35px;
+    font-size: medium;
+    color: black;
+  }
+
+  h4{
+    text-align: center;
+    padding-right: 35px;
+    font-size: medium;
+    color: rgb(146, 38, 146);
+  }
+  
+  h1:hover{
+    
+    color:rgb(103, 131, 103);
+}
+.back-button{
+  height: 40px;
+  width: 100px;
+  background-color: rgb(246, 233, 215);
+  border: 1px solid purple;
+  color: purple;
+  border-radius: 6px;
+  /* float: right; */
+  align-items: center;
+
+}
+
+.edit-button{
+
+  height: 40px;
+  width: 100px;
+  background-color: rgb(246, 233, 215);
+  border: 1px solid purple;
+  color: purple;
+  border-radius: 6px;
+  /* float: right; */
+  align-items: center;
+
+}
+.delete-button{
+  height: 40px;
+  width: 100px;
+  background-color: rgb(246, 233, 215);
+  border: 1px solid purple;
+  color: purple;
+  border-radius: 6px;
+  /* float: right; */
+  align-items: center;
+
+}
