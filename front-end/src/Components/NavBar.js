@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import '../Components/NavBar.css'
-
-export default function NavBar() {
+import '../Components/Navbar.css'
+function NavBar() {
   return (
     <nav className="navbar">
       <Link to="/">
@@ -24,3 +23,4 @@ export default function NavBar() {
     </nav>
   );
 }
+export default NavBar;
