@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import NavBar from "./Components/NavBar";
 import Krystals from "./Components/Krystals";
-import KrystalNewForm from "./Components/KrystalNewForm";
+import About from "./Components/About"
 import KrystalEditForm from "./Components/KrystalEditForm";
 import KrystalDetails from "./Components/KrystalDetails";
 import FourOFour from "./Components/FourOFour";
@@ -33,7 +33,7 @@ function App() {
             <Route path="/krystals" element={<Krystals />} />
             <Route path="/krystals/:index" element={<KrystalDetails />} />
             <Route path="/krystals/:index/edit" element={<KrystalEditForm />} />
-            <Route path="/krystals/new" element={<KrystalNewForm />} />
+            <Route path="/about" element={<About/>} />
             <Route path="*" element={<FourOFour />} />
           </Routes>
         </main>

@@ -3,7 +3,6 @@ import React from 'react'
 function SearchBar ({searchTerm, setSearchTerm}) {
 
 const updateSearchTerm = (e) => {
-    console.log(e.target.value)
     setSearchTerm(e.target.value)
 }
 

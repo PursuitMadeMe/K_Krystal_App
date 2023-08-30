@@ -1,15 +1,13 @@
-.navbar
+.NavBar
 {
-    background-color:lightgrey;
-    height: 75px;
-    box-shadow: 4px 4px 8px rgb(160, 95, 160);
+    background-color:rgb(60, 148, 60);
+    height: 175px;
+    box-shadow: 4px 4px 8px orange;
 }
 .logo{
     height: 60px;
     width: auto;
-    margin-top:10px;
-    padding: -1px;
-    float: left;
+    padding: 10px;
 }
 
 img{
@@ -17,8 +15,11 @@ img{
     width: 550px;
 }
 .link{
-    text-decoration: none;
-    margin-left: 250px;
+    display: grid;
+    align-items: center;
+    justify-content: auto;
+    padding-left: 50px;
+    margin-left: 500px;
 }
 .orange{
 text-align: center;
@@ -27,7 +28,7 @@ font-size: 50px;
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .home-button{
-    background-image: linear-gradient(rgb(190, 127, 190),rgb(168, 209, 168));
+    background-image: linear-gradient(orange,rgb(60,148,60));
     width: 100px;
     padding: 12px;
     border:none;
@@ -36,27 +37,27 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     margin-left: 15px;
     margin-right: 15px;
 
-    box-shadow:2px 2px 4px rgb(178, 169, 121);
+    box-shadow:2px 2px 4px white;
     float: right;
 
 }
 .home-button:hover{
-    background-image: linear-gradient(rgb(180, 115, 126),rgb(217, 211, 173));
+    background-image: linear-gradient(rgb(247,219,185),rgb(217, 211, 173));
 }
-.new-button{
-background-image: linear-gradient(rgb(190, 127, 190),rgb(168, 209, 168));
-width: 150px;
+.about-button{
+    background-image: linear-gradient(orange,rgb(60,148,60));
+    width: 150px;
 padding: 12px;
 border:none;
 color:whitesmoke;
 margin-top: -10px;
 margin-left: 15px;
-box-shadow:2px 2px 4px rgb(176, 167, 119);
+box-shadow:2px 2px 4px white;
 float: right;
 
 }
-.new-button:hover{
-    background-image: linear-gradient(rgb(180, 115, 126),rgb(217, 211, 173));
+.about-button:hover{
+    background-image: linear-gradient(rbg(247,219,185),rgb(217, 211, 173));
 }
 /* .menudiv{
     

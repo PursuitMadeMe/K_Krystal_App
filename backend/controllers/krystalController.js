@@ -62,7 +62,7 @@ krystals.delete("/:id", async (req, res) => {
     if (deletedKrystal.id) {
       res.status(200).json(deletedKrystal);
     } else {
-      res.status(400).json("Snack not found");
+      res.status(400).json("Krystal not found");
     }
   });
 

@@ -7,7 +7,6 @@ import Home from "../Pages/Home";
 
 
 
-// Lets save the state of our UserContext and create a useEffect() to listen for changes and connect our functions to our buttons.
 
 export const Login = () => {
   const user = useContext(UserContext);
@@ -21,7 +20,7 @@ export const Login = () => {
 
   return (
     <div>
-      <section>
+      
         <div>
           <button className="signin" onClick={signInWithGoogle}>Sign in with Google</button>
           <br/>
@@ -30,7 +29,7 @@ export const Login = () => {
         </div>
         <br/>
         <Home />
-      </section>
+      
     </div>
   );
 };
