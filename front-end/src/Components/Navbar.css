@@ -1,7 +1,7 @@
 .NavBar
 {
     background-color:rgb(60, 148, 60);
-    height: 175px;
+    height: 200px;
     box-shadow: 4px 4px 8px orange;
 }
 .logo{
@@ -18,8 +18,10 @@ img{
     display: grid;
     align-items: center;
     justify-content: auto;
-    padding-left: 50px;
+    padding-left: 105px;
     margin-left: 500px;
+    font-size: large;
+    font-family: 'Franklin Gothic Large';
 }
 .orange{
 text-align: center;

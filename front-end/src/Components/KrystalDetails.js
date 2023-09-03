@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
+import '../Components/KrystalDetails.css'
+
 import axios from "axios";
 
 // SHOW ROUTE
@@ -49,7 +51,7 @@ function KrystalDetails() {
       </span>
       <br />
       <Link to={`/krystals`}>
-        <button className="back-button">Back</button>
+        <button className="KrystalDetails--backButton">Back</button>
       </Link>
      
     </div>

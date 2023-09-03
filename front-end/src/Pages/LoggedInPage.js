@@ -36,11 +36,7 @@ export const LoggedInPage = () => {
         </div>
         
         <div className="LoggedInPage--healing center">
-        <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ggzQzvB7a4b1IeHx59YOpULxhqcouo9asRI72FR0bJQgPBxBFAHcyM_PpsYOvHefxOM&usqp=CAU"alt="lotus picture" />
-        <h3>Kenyetta's Crystal Healing Center</h3>
         <br/>
-        <h1>Your health and healing is our top priority</h1>
-        <img src="https://images.squarespace-cdn.com/content/v1/594aee74c534a5baa7eb3e5d/1518560109041-PI71OWF82S55VVP5ZVSZ/IMG_1584+two_63.jpg" alt="Male Crystal Massage"/>
         </div>
         
         <div className="LoggedInPage--controls"> 
