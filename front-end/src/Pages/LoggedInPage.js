@@ -1,8 +1,9 @@
 import React, { useContext, useEffect } from "react";
-import { Link } from "react-router-dom";
+import './LoggedInPage.css'
 import { UserContext } from "../Providers/UserProvider";
 import { useNavigate} from "react-router-dom";
 import { logOut } from "../Services/Firebase";
+import Home from "./Home"
 
 
 export const LoggedInPage = () => {
@@ -34,18 +35,11 @@ export const LoggedInPage = () => {
         <h1> YOU ARE LOGGED IN </h1>
         <h2> {user.displayName}</h2>
         </div>
-        
-        <div className="LoggedInPage--healing center">
-        <br/>
-        </div>
-        
         <div className="LoggedInPage--controls"> 
         <br/>
         Email: {user.email}
         <br/>
-        <Link to="/">
-          <button>Home</button>
-        </Link>
+        <Home/>
         <br/>
         <br/>
         <button onClick={handleLogout}> LOG OUT</button>

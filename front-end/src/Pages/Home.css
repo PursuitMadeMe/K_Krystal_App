@@ -2,16 +2,27 @@
 
 .Home {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    min-width: 100vh;
+    min-height: 100vh;
     padding-left: 25px;
     background-color: orange;
-    border: 5px solid purple;
+}
+.Home h1{
+    padding-left: 250px;
+    padding-top: 20px;
+}
+
+.Home img {
+    width: 1005px;
+    height: 800px;
+
 }
 .Home button {
     background-color: rgb(60,148,60);
     width: 100px;
+    margin-left: 500px;
     padding: 12px;
     align-items: center;
     border:none;

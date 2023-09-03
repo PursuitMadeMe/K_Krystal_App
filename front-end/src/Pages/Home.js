@@ -9,8 +9,7 @@ function Home() {
         <img
           src="https://i.pinimg.com/736x/5b/54/11/5b5411c51629bb2480cfda08aa877bda.jpg"
           alt="Chakra Woman"
-          width={500}
-          height={500}
+         
         />
 
         <h1>NAMASTE TO A BRAND NEW YOU.</h1>

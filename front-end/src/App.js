@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import NavBar from "./Components/NavBar";
+import Home from "./Pages/Home"
 import Krystals from "./Components/Krystals";
 import About from "./Components/About"
 import KrystalEditForm from "./Components/KrystalEditForm";
@@ -30,6 +31,7 @@ function App() {
           <Routes>
             <Route path="/" element={<LoginPage />} />
             <Route path="/loggedIn" element={<LoggedInPage />} />
+            <Route path="/home" element={<Home/>}/>
             <Route path="/krystals" element={<Krystals />} />
             <Route path="/krystals/:index" element={<KrystalDetails />} />
             <Route path="/krystals/:index/edit" element={<KrystalEditForm />} />
