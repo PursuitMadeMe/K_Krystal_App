@@ -1,136 +1,122 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .Login {
-    
-       
-        background-color: orange;
-    
-    min-width: 100vh;
-    min-height: 100vh;
-    display: flex;
-    overflow-y: hidden;
+  background-color: orange;
+
+  min-width: 100vh;
+  min-height: 100vh;
+  display: flex;
+  overflow-y: hidden;
 }
 
 .Login--splitLeft {
-    width: 50vw;  
+  width: 50vw;
   background-color: orange;
   position: relative;
 }
 
 .Login--splitRight {
-    width: 50vw;
-    height: 100vh;
-    background-color: beige;
+  width: 50vw;
+  height: 100vh;
+  background-color: beige;
 }
 
 .Login--signin {
-width: 12em; height: 12em;
-border-radius: 50%;
-position: absolute;
-top: 85px; right: -7em;
-transform: translateY(-50%);
-background-image: linear-gradient(rgb(60,148,60),orange);
-padding: 12px;
-border:none;
-color:whitesmoke;
-margin-left: 15px;
-margin-right: 15px;
-box-shadow:2px 2px 4px white;
-
-
-
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+  position: absolute;
+  top: 85px;
+  right: -7em;
+  transform: translateY(-50%);
+  background-image: linear-gradient(rgb(60, 148, 60), orange);
+  padding: 12px;
+  border: none;
+  color: whitesmoke;
+  margin-left: 15px;
+  margin-right: 15px;
+  box-shadow: 2px 2px 4px white;
 }
-.Login--signout{
+.Login--signout {
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 375px;
+  right: -7em;
+  transform: translateY(50%);
+  background-image: linear-gradient(rgb(60, 148, 60), orange);
+  padding: 12px;
+  border: none;
+  color: whitesmoke;
 
-    width: 12em; height: 12em;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 375px; right: -7em;
-    transform: translateY(50%);
-    background-image: linear-gradient(rgb(60,148,60),orange);
-    padding: 12px;
-    border:none;
-    color:whitesmoke;
+  margin-left: 15px;
+  margin-right: 15px;
 
-    margin-left: 15px;
-    margin-right: 15px;
-
-    box-shadow:2px 2px 6px white;
-
-}
-
-
-.Login--signin:hover{
-    background-color: rgb(232, 229, 199);
-    color:rgb(217, 186, 221);
-
+  box-shadow: 2px 2px 6px white;
 }
 
-
-.Login--healingCenter img{
-    padding-left: 500px;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    width:600px;
-    height: 110px;
-    
+.Login--signin:hover {
+  background-color: rgb(232, 229, 199);
+  color: rgb(217, 186, 221);
 }
 
-.Login--healingCenter h3{
-    padding-left: 400px;
+.Login--healingCenter img {
+  padding-left: 500px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  width: 600px;
+  height: 110px;
+}
+
+.Login--healingCenter h3 {
+  padding-left: 400px;
 }
 
 .Login--healingInfo {
   padding-top: 200px;
 }
-.Login--healingInfo h1{
-    padding-top: 85px;
-    padding-left: 200px;
-    font-weight: 900;
-    font-size: xx-large;
+.Login--healingInfo h1 {
+  padding-top: 85px;
+  padding-left: 200px;
+  font-weight: 900;
+  font-size: xx-large;
 }
 
 .Login--healingInfo button {
-    background-color:rgb(60,148,60);
-    padding: 12px;
-    border:none;
-    color:whitesmoke;
-    margin-top: 35px;
-    margin-left: 475px;
-    box-shadow:2px 2px 4px white;
+  background-color: rgb(60, 148, 60);
+  padding: 12px;
+  border: none;
+  color: whitesmoke;
+  margin-top: 35px;
+  margin-left: 475px;
+  box-shadow: 2px 2px 4px white;
 }
 
-.Login--image img{
-    margin-top: 50px;
-    margin-left: 200px;
-    width: 550px;
-    height: 700px;
-    border: 5px solid orange;
+.Login--image img {
+  margin-top: 50px;
+  margin-left: 200px;
+  width: 550px;
+  height: 700px;
+  border: 5px solid orange;
 }
 
-
-.Login--image h4{
-    padding-top: 25px;
-    padding-left: 245px;
-    font-weight: 800;
+.Login--image h4 {
+  padding-top: 25px;
+  padding-left: 245px;
+  font-weight: 800;
 }
 
-.Login--signout{
-  
+.Login--signout {
 }
-.Login--signout:hover{
-    background-color: rgb(232, 229, 199);
-    color: rgb(66, 110, 110);
+.Login--signout:hover {
+  background-color: rgb(232, 229, 199);
+  color: rgb(66, 110, 110);
 }
-
-
-
-
-
 
 /* .center{
     margin-left: auto;
@@ -153,6 +139,3 @@ box-shadow:2px 2px 4px white;
     background-color: rgb(232, 229, 199);
     color: rgb(66, 110, 110);
 } */
-
-
-

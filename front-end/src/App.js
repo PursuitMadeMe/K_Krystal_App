@@ -3,23 +3,21 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import NavBar from "./Components/NavBar";
-import Home from "./Pages/Home"
+import About from "./Components/About";
 import Krystals from "./Components/Krystals";
-import About from "./Components/About"
-import KrystalEditForm from "./Components/KrystalEditForm";
+// import KrystalEditForm from "./Components/KrystalEditForm";
 import KrystalDetails from "./Components/KrystalDetails";
 import FourOFour from "./Components/FourOFour";
 
-// In order to access our Context - we need to import in in App.js and nest our other components inside of it
 
 
 
+// import Home from "./Pages/Home"
 import {LoggedInPage} from "./Pages/LoggedInPage"
 import LoginPage from "./Pages/LoginPage";
 import { UserProvider } from "./Providers/UserProvider";
 
 
-// Note: make sure that our Router is nested inside of our <UserProvider> failing to do so will throw an error in leveraging useHistory()
 
 function App() {
   return (
@@ -30,12 +28,11 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<LoginPage />} />
+            <Route path="/about" element={<About/>}/>
             <Route path="/loggedIn" element={<LoggedInPage />} />
-            <Route path="/home" element={<Home/>}/>
             <Route path="/krystals" element={<Krystals />} />
             <Route path="/krystals/:index" element={<KrystalDetails />} />
-            <Route path="/krystals/:index/edit" element={<KrystalEditForm />} />
-            <Route path="/about" element={<About/>} />
+            {/* <Route path="/krystals/:index/edit" element={<KrystalEditForm />} /> */}
             <Route path="*" element={<FourOFour />} />
           </Routes>
         </main>

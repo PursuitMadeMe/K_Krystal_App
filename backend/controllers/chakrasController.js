@@ -8,7 +8,6 @@ const {
   deleteChakra,
 } = require("../queries/chakras.js");
 
-//INDEX
 chakras.get("/", async (req, res) => {
   const allChakras = await getAllChakras();
   if (allChakras[0]) {
@@ -18,7 +17,6 @@ chakras.get("/", async (req, res) => {
   }
 });
 
-// Read (Singular/Specific ID)
 chakras.get("/:id", async (req, res) => {
   const { id } = req.params;
   const chakra = await getChakra(id);
@@ -33,7 +31,6 @@ chakras.get("/:id", async (req, res) => {
   }
 });
 
-// Create
 chakras.post("/", async (req, res) => {
   const { body } = req;
 
@@ -57,7 +54,6 @@ chakras.post("/", async (req, res) => {
   }
 });
 
-// Update
 chakras.put("/:id", async (req, res) => {
   const { id } = req.params;
   const { body } = req;
@@ -69,18 +65,24 @@ chakras.put("/:id", async (req, res) => {
   if (updatedChakra.id) {
     res.status(200).json(updatedChakra);
   } else {
-    res.status(404).json({ error: "chakra not found line 72 chakrasController" });
+    res
+      .status(404)
+      .json({ error: "chakra not found line 72 chakrasController" });
   }
 });
 
-// Delete
 chakras.delete("/:id", async (req, res) => {
   const { id } = req.params;
   const deletedChakra = await deleteChakra(id);
   if (deletedChakra.id) {
     res.status(200).json({ payload: deletedChakra, success: true });
   } else {
-    res.status(404).json({ payload: "chakra not found line 83 chakrasCoontroller", success: false });
+    res
+      .status(404)
+      .json({
+        payload: "chakra not found line 83 chakrasCoontroller",
+        success: false,
+      });
   }
 });
 

@@ -1,5 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 .KrystalDetails {
-    border: 5px solid purple;
+    min-width: 100vh;
+    min-height: 100vh;
+    display: grid; 
+    align-items: center;
+    justify-content: ce;
+    overflow-y: hidden;
+}
+
+.KrystalDetails--splitLeft {
+    width: 50vw;  
+    height: 100vh;
+    background-color: orange;
+    position: relative;
+}
+
+.KrystalDetails--splitRight {
+    width: 50vw;
+    height: 100vh;
+    background-color: beige;
 }
 
 .KrystalDetails--backButton {
