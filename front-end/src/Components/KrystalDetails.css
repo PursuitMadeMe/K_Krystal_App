@@ -1,30 +1,25 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+
 
 .KrystalDetails {
-    min-width: 100vh;
     min-height: 100vh;
-    display: grid; 
-    align-items: center;
-    justify-content: ce;
-    overflow-y: hidden;
+    display: flex;
 }
 
 .KrystalDetails--splitLeft {
-    width: 50vw;  
-    height: 100vh;
+    padding-top: 50px;
+    padding-left: 800px;
+    width: 100vw;  
+    height: 60vh;
     background-color: orange;
-    position: relative;
 }
 
 .KrystalDetails--splitRight {
-    width: 50vw;
-    height: 100vh;
+    padding-top: 50px;
+    padding-left: 800px;
+    width: 100vw;
+    height: 70vh;
     background-color: beige;
-}
+} 
 
 .KrystalDetails--backButton {
     background-image: linear-gradient(orange,rgb(60,148,60));
