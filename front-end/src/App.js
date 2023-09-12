@@ -5,14 +5,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import About from "./Components/About";
 import Krystals from "./Components/Krystals";
-// import KrystalEditForm from "./Components/KrystalEditForm";
 import KrystalDetails from "./Components/KrystalDetails";
 import FourOFour from "./Components/FourOFour";
 
 
 
 
-// import Home from "./Pages/Home"
 import {LoggedInPage} from "./Pages/LoggedInPage"
 import LoginPage from "./Pages/LoginPage";
 import { UserProvider } from "./Providers/UserProvider";
@@ -32,7 +30,6 @@ function App() {
             <Route path="/loggedIn" element={<LoggedInPage />} />
             <Route path="/krystals" element={<Krystals />} />
             <Route path="/krystals/:index" element={<KrystalDetails />} />
-            {/* <Route path="/krystals/:index/edit" element={<KrystalEditForm />} /> */}
             <Route path="*" element={<FourOFour />} />
           </Routes>
         </main>

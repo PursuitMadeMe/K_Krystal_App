@@ -1,3 +1,9 @@
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
 .LoggedInPage{
     background-color: beige;
 }

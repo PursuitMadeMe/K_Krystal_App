@@ -41,11 +41,13 @@ function Krystals() {
     <div className="Krystals--searchbar">
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </div>
+      <div className="Krystals--index">
       {filteredKrystals.map((krystal, index) => {
         return (
             <Krystal krystal={krystal} index={index} />
         );
       })}
+      </div>
       {filteredKrystals.length === 0 && (
         <div className="krystals__noResults">No Results Found</div>
       )}
