@@ -49,7 +49,7 @@ function Krystals() {
       })}
       </div>
       {filteredKrystals.length === 0 && (
-        <div className="krystals__noResults">No Results Found</div>
+        <div className="Krystals--noResults">No Results Found</div>
       )}
     </div>
   );

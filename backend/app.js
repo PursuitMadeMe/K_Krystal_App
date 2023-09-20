@@ -11,7 +11,7 @@ app.use("/krystals", krystalsController);
 
 
 app.get("/", (req, res) => {
-  res.send("Welcome to Kim's Krystal Healing App");
+  res.send("Welcome to Kenyetta's Crystal Healing Center");
 });
 
 const db = require("./db/dbConfig.js");
