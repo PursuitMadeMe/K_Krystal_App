@@ -1,60 +1,24 @@
-
-
-
-.new {
-    height: 626px;
-    width: 800px;
-    background-color: lightgray;
-    opacity: 0.8;
-    margin: auto;
-    display: flex;
-    justify-content: center;
+.About{
+    background-color: purple;
 }
 
-fieldset {
-    height: 400px;
-    width: 450px;
-    background-color: rgb(169, 226, 169);
+/* .About--splitLeft {
+    width: 50vw;
+    background-color: orange;
+    position: relative;
 }
 
-label {
-    color: rgb(113, 113, 65);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
+.About--splitRight{
+    width: 50vw;
+  height: 100vh;
+  background-color: beige;
 }
-
-input {
-    width: auto;
-    background-color: rgb(246, 233, 215);
-    border: 1px solid purple;
-    color: purple;
-    border-radius: 6px;
-
-}
-
-.formbtns {
-    height: 40px;
-    width: 100px;
-    background-color: rgb(246, 233, 215);
-    border: 1px solid purple;
-    color: purple;
-    border-radius: 6px;
-    float: right;
-}
-
-.formbtnb {
-    height: 40px;
-    width: 100px;
-    background-color: rgb(246, 233, 215);
-    border: 1px solid purple;
-    color: purple;
-    border-radius: 6px;
-    float: left;
-}
-.formbtnb:hover{
-    background-color: lightgoldenrodyellow;
-}
-.formbtns:hover{
-    background-color: lightgoldenrodyellow;
-}
+.About--button{
+background-color: rgb(60, 148, 60);
+  padding: 12px;
+  border: none;
+  color: whitesmoke;
+  margin-top: 35px;
+  margin-left: 475px;
+  box-shadow: 2px 2px 4px white;
+} */
