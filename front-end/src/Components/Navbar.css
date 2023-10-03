@@ -7,7 +7,6 @@
 .logo{
     height: 60px;
     width: auto;
-    padding: 10px;
 }
 
 img{
@@ -23,14 +22,10 @@ img{
     font-size: large;
     font-family: 'Franklin Gothic Large';
 }
-.orange{
-text-align: center;
-font-weight: bold;
-font-size: 50px;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+
+
 .home-button{
-    background-image: linear-gradient(orange,rgb(60,148,60));
+    background-color: orange;
     width: 100px;
     padding: 12px;
     border:none;
@@ -44,10 +39,11 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 
 }
 .home-button:hover{
-    background-image: linear-gradient(rgb(247,219,185),rgb(217, 211, 173));
+    color: rgb(60,148,60);
 }
+
 .about-button{
-    background-image: linear-gradient(orange,rgb(60,148,60));
+    background-color: orange;
     width: 150px;
 padding: 12px;
 border:none;
@@ -59,10 +55,5 @@ float: right;
 
 }
 .about-button:hover{
-    background-image: linear-gradient(rbg(247,219,185),rgb(217, 211, 173));
+    color:rgb(60,148,60);
 }
-/* .menudiv{
-    
-    background-color: lightgrey;
-    
-} */

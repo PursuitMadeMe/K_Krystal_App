@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { signInWithGoogle, logOut } from "../Services/Firebase";
 import { Link } from "react-router-dom";
 import "../Components/Login.css"
-// import Home from "../Pages/Home";
 
 
 
@@ -35,7 +34,6 @@ export const Login = () => {
         <div>
         <button className="Login--signin" onClick={signInWithGoogle}>Sign in with Google</button>
           <br/>
-          <button className="Login--signout" onClick={logOut}> Sign Out</button>
           </div>
         </div>
         </div>
