@@ -15,6 +15,7 @@ function About() {
     </div>
     <div className="About--splitRight">
     <div className="About--benefits">
+    <h2>Using This Crystal healing app over time will unblock your chakra's, improve your mood and raise vibrations</h2>
     <img src="https://media.gettyimages.com/id/1364024356/photo/44-year-old-plus-size-black-woman-meditating.jpg?s=1024x1024&w=gi&k=20&c=TJS_NKbN20qFaAfvL0iyANXQv040ajQu1_mfzsYK8Kw=" alt="Meditation"/>
     <h3>Learn the healing properties of Natural Crystals to;</h3>
     <ul>
