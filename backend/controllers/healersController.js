@@ -8,7 +8,6 @@ const {
   deleteHeal,
 } = require("../queries/healers.js");
 
-//INDEX
 healers.get("/", async (req, res) => {
   const allHealers = await getAllHealers();
   if (allHealers[0]) {
@@ -18,7 +17,6 @@ healers.get("/", async (req, res) => {
   }
 });
 
-// Read (Singular/Specific ID)
 healers.get("/:id", async (req, res) => {
   const { id } = req.params;
   const heal = await getHeal(id);
@@ -33,7 +31,6 @@ healers.get("/:id", async (req, res) => {
   }
 });
 
-// Create
 healers.post("/", async (req, res) => {
   const { body } = req;
 
@@ -57,7 +54,6 @@ healers.post("/", async (req, res) => {
   }
 });
 
-// Update
 healers.put("/:id", async (req, res) => {
   const { id } = req.params;
   const { body } = req;
@@ -73,14 +69,18 @@ healers.put("/:id", async (req, res) => {
   }
 });
 
-// Delete
 healers.delete("/:id", async (req, res) => {
   const { id } = req.params;
   const deletedHeal = await deleteHeal(id);
   if (deletedHeal.id) {
     res.status(200).json({ payload: deletedHeal, success: true });
   } else {
-    res.status(404).json({ payload: "heal not found line 83 healersCoontroller", success: false });
+    res
+      .status(404)
+      .json({
+        payload: "heal not found line 83 healersCoontroller",
+        success: false,
+      });
   }
 });
 

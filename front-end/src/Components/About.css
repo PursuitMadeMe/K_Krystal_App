@@ -1,0 +1,39 @@
+.About{
+    background-color:orange;
+}
+
+.About--benefits img {
+  width: 500px;
+  height: 205px;
+}
+
+.About--button{
+  background-color: rgb(60, 148, 60);
+    padding: 12px;
+    border: none;
+    color: whitesmoke;
+    margin-top: 35px;
+    margin-left: 475px;
+    box-shadow: 2px 2px 4px white;
+  } 
+
+/* .About--splitLeft {
+    width: 50vw;
+    background-color: orange;
+    position: relative;
+}
+
+.About--splitRight{
+    width: 50vw;
+  height: 100vh;
+  background-color: beige;
+}
+.About--button{
+background-color: rgb(60, 148, 60);
+  padding: 12px;
+  border: none;
+  color: whitesmoke;
+  margin-top: 35px;
+  margin-left: 475px;
+  box-shadow: 2px 2px 4px white;
+} */

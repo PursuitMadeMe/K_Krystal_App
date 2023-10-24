@@ -1,12 +1,47 @@
-.krystals-index{
+
+
+  .Krystals {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 5% 5%;
-    height: 475px;
-    /* overflow:scroll; */
+    grid-template-columns: 25% 15% ;
+    justify-content: center;
+  overflow-y: scroll;
+  padding-left: 25%;
+  gap: 200px;
+  border: 5px solid blue;
+  background-color: beige;
+  }
+
+  .Krystals--header {
+    color: purple;
+    margin-top: 75px;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium';
     
   }
+  .Krystals img {
+    gap: 45px;
+    border: 5px solid green;
+  }
+
+ 
+
+
+  .Krystals input{
+    margin-top: 55px;
+    width: 500px;
+    height: 100px;
+    
+  }
+
   
+  
+
+
+
+
+
+  
+/*   
   .krystals{
     height: 300px;
     width: 300px;
@@ -49,7 +84,6 @@
   border: 1px solid purple;
   color: purple;
   border-radius: 6px;
-  /* float: right; */
   align-items: center;
 
 }
@@ -62,7 +96,6 @@
   border: 1px solid purple;
   color: purple;
   border-radius: 6px;
-  /* float: right; */
   align-items: center;
 
 }
@@ -73,7 +106,6 @@
   border: 1px solid purple;
   color: purple;
   border-radius: 6px;
-  /* float: right; */
   align-items: center;
 
-}
+} */

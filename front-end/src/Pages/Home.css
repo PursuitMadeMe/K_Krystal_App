@@ -1,45 +1,33 @@
-*
-{
-    margin: 0;
-    padding: 0;
-}
-.maindiv{
-    background-color:rgb(227, 238, 227);
-    opacity: 0.9;
 
-      
-}
-h1{
-    color: rgb(146, 38, 146);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-}
-h1:hover{
-    
-    color:rgb(103, 131, 103);
-}
-p{
-    text-align: center;
-    font-size: 20px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-h2{
-    color: rgb(146, 38, 146);
-    align-items: center;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-h2:hover{
-    
-    color:rgb(103, 131, 103);
-}
-.style{
-    display: flex;
+.Home {
+    display: grid;
     justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    min-height: 100vh;
+    padding-left: 25px;
+    background-color: orange;
 }
-.imgstyle{
-    height: 400px;
-    width: 400px;
-    border:2px solid purple;  
-    
+.Home h1{
+    padding-left: 250px;
+    padding-top: 20px;
+}
+
+.Home img {
+    width: 1005px;
+    height: 800px;
+
+}
+.Home button {
+    background-color: rgb(60,148,60);
+    width: 100px;
+    margin-left: 500px;
+    padding: 12px;
+    align-items: center;
+    border:none;
+    color:whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow:2px 2px 4px white;
 }

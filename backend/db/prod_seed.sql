@@ -17,7 +17,6 @@ INSERT INTO krystals (name, healing, chakra, image, numerology, category, is_fav
 ('Peacock Ore', 'Inspires us to grab the future and embrace change', 'Crown/ Third Eye/ Throat/ Heart/ Solar Plexus/ Sacral/ Root', 'https://i.etsystatic.com/15229860/r/il/32fcc2/2888593919/il_794xN.2888593919_sauv.jpg', 9,'creativity/balance/happiness/manifestation', 'true');
 
 INSERT INTO healers ("feelings") VALUES
--- - add more "feelings" from krystal properties
 ('anxiety'),
 ('depression'),
 ('confidence'),
@@ -33,11 +32,3 @@ INSERT INTO chakras ("type", "attribute") VALUES
 ('root', 'trust');
 
 
-
--- SELECT * FROM users_healers
--- JOIN healears ON users_healers.healer_id = healears.id
--- JOIN users ON users.user_id = users_healers.user_id;
-
--- SELECT * FROM users_chakras
--- JOIN chakras ON users_chakras.chakra_id = chakras.id
--- JOIN users ON users.user_id = users_chakras.user_id;

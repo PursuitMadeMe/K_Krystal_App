@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import '../Components/Navbar.css'
 
-export default function NavBar() {
+function NavBar() {
   return (
-    <nav className="navbar">
+    <nav className="NavBar">
       <Link to="/">
-        <img src="../Image2.jpeg" alt="Krystal" className="logo" />
+        <img src="https://t3.ftcdn.net/jpg/04/70/11/84/360_F_470118449_4wxwyI2EdWrPq8w6atC1QpjG2KY0nglu.jpg" alt="Krystal" className="logo" />
       </Link>
 
       <Link to="/krystals" className="link">
-        <h1 className="orange">HEALING KRYSTALS</h1>
+        <h1>Kenyetta's Crystal Healing Center</h1>
       </Link>
 
       <div>
@@ -17,10 +17,11 @@ export default function NavBar() {
           <button className="home-button">HOME</button>
         </Link>
 
-        <Link to="/krystals/new">
-          <button className="new-button">NEW KRYSTAL</button>
+        <Link to="/about">
+          <button className="about-button">ABOUT</button>
         </Link>
       </div>
     </nav>
   );
 }
+export default NavBar;

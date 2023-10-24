@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
+import "../Components/KrystalDetails.css";
+
 import axios from "axios";
 
-// SHOW ROUTE
 function KrystalDetails() {
   const [krystal, setKrystal] = useState({});
   const { index } = useParams();
@@ -18,40 +19,48 @@ function KrystalDetails() {
       .catch((err) => console.error(err));
   }, [index, navigate, API]);
 
-  const deleteKrystal = () => {
-    axios
-      .delete(`${API}/krystals/${index}`)
-      .then(() => navigate(`/krystals`))
-      .catch((error) => console.error("catch", error));
-  };
-  const handleDelete = () => {
-    deleteKrystal();
-  };
-
   return (
-    <div className="krystal-details">
-      <section className="krystal-visual">
+    <div className="KrystalDetils">
+      <div className="KrystalDetails--splitRight">
+        <br />
         <h3>
           {krystal.is_favorite ? <span>💎</span> : null} {krystal.name}
-        </h3> 
+        </h3>
         <h2 className="krystal">{krystal.name} </h2>
-        <h3>Healing Property : {krystal.healing}</h3>
-        <img src={krystal.image} alt={krystal.name} />
-        <h3>Numerology : {krystal.numerology}</h3>
+        <br />
+
         <h3>Chakra : {krystal.chakra}</h3>
         <h3>Good for: {krystal.category}</h3>
-      </section>
 
-      <br />
-      <Link to={`/krystals`}>
-        <button className="back-button">Back</button>
-      </Link>
-      <Link to={`/krystals/${index}/edit`}>
-        <button className="edit-button">Edit</button>
-      </Link>
-      <button className="delete-button" onClick={handleDelete}>
-        Delete
-      </button>
+        <h3>Healing Property : {krystal.healing}</h3>
+        <br />
+
+        <img src={krystal.image} alt={krystal.name} />
+        <br />
+        <br />
+
+        <Link to={`/krystals`}>
+          <button className="KrystalDetails--backButton">Back</button>
+        </Link>
+        <br />
+        <br />
+      </div>
+      <div className="KrystalDetails--splitLeft">
+        <h1>Nuturing you back to health through natural, holistic ways</h1>
+        <br />
+
+        <img
+          src="https://cdn.shopify.com/s/files/1/1547/3947/files/pyrite-meditation-cover_10_1024x1024.jpg?v=1610053988"
+          alt="crystal meditation"
+        />
+        <br />
+        <br />
+
+        <h3>
+          Meditate with listed healing crystal, in a quite place for 30 minutes
+          a day
+        </h3>
+      </div>
     </div>
   );
 }

@@ -1,31 +1,36 @@
-.back-button{
-    height: 40px;
-    width: 100px;
-    background-color: rgb(246, 233, 215);
-    border: 1px solid purple;
-    color: purple;
-    border-radius: 6px;
-    float: right;
 
+
+.KrystalDetails {
+    min-height: 100vh;
+    display: flex;
 }
 
-.edit-button{
-
-    height: 40px;
-    width: 100px;
-    background-color: rgb(246, 233, 215);
-    border: 1px solid purple;
-    color: purple;
-    border-radius: 6px;
-    float: right;
+.KrystalDetails--splitLeft {
+    padding-top: 50px;
+    padding-left: 800px;
+    width: 100vw;  
+    height: 60vh;
+    background-color: orange;
 }
-.delete-button{
-    height: 40px;
+
+.KrystalDetails--splitRight {
+    padding-top: 50px;
+    padding-left: 800px;
+    width: 100vw;
+    height: 70vh;
+    background-color: beige;
+} 
+
+.KrystalDetails--backButton {
+    background-image: linear-gradient(orange,rgb(60,148,60));
     width: 100px;
-    background-color: rgb(246, 233, 215);
-    border: 1px solid purple;
-    color: purple;
-    border-radius: 6px;
-    float: right;
+    padding: 12px;
+    border:none;
+    color:whitesmoke;
+    margin-top: -10px;
+    margin-left: 210px;
+    margin-right: 15px;
+
+    box-shadow:2px 2px 4px white;
 
 }

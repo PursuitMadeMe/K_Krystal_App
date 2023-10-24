@@ -1,0 +1,24 @@
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+.LoggedInPage{
+    background-color: beige;
+}
+
+
+.LoggedInPage button{
+    background-color: rgb(60,148,60);
+    width: 100px;
+    margin-left: 10px;
+    padding: 12px;
+    align-items: center;
+    border:none;
+    color:whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow:2px 2px 4px white;
+
+}

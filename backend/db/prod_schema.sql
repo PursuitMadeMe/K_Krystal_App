@@ -10,14 +10,7 @@ CREATE TABLE krystals (
 );
 
  DROP TABLE IF EXISTS users;
-
---  CREATE TABLE users(
---     user_id TEXT PRIMARY KEY UNIQUE NOT NULL, 
---     email TEXT NOT NULL,
---     username TEXT NOT NULL,
---     firsname TEXT NOT NULL,
---     lastname TEXT NOT NULL
---  );   
+ 
 
 DROP TABLE IF EXISTS healears;
 
