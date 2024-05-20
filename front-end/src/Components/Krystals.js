@@ -39,6 +39,7 @@ function Krystals() {
         <h1>Healing Crystals</h1>
         </div>
     <div className="Krystals--searchbar">
+    <h2>WHAT CHAKRA IS OUT OF BALANCE?</h2>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </div>
       <div className="Krystals--index">
