@@ -12,7 +12,8 @@ const getAllChakras = async () => {
 const getChakra = async (id) => {
   try {
     const chakra = await db.one("SELECT * FROM chakras WHERE id=$1", id);
-    return heal;
+    //change return from heal to chakra
+    return chakra;
   } catch (err) {
     return err;
   }
@@ -47,7 +48,7 @@ const updateChakra = async (id, chakra) => {
 const deleteChakra = async (id) => {
   try {
     const deletedChakra = await db.one(
-      "DELETE FROM chakras WHERE id =$1 RETURNING *",
+      "DELETE FROM chakras WHERE id=$1 RETURNING *",
       id
     );
     return deletedChakra;
