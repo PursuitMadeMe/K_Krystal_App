@@ -13,7 +13,7 @@ const getAllKrystals = async () => {
     // SHOW Route - DONE 
     const getKrystal = async (id) => {
         try {
-          const oneKrystal = await db.one("SELECT * FROM krystals WHERE id=$1", id);
+          const oneKrystal = await db.oneOrNone("SELECT * FROM krystals WHERE id=$1", id);
           return oneKrystal;
         } catch (error) {
           return error;
@@ -23,7 +23,7 @@ const getAllKrystals = async () => {
       // CREATE Route - DONE
 const createKrystal = async (krystal) => {
     try {
-      const newKrystal = await db.one(
+      const newKrystal = await db.oneOrNone(
         "INSERT INTO krystals (name, healing, chakra, image, numerology, category, is_favorite) VALUES($1, $2, $3, $4, $5, $6, $7) RETURNING *",
         [krystal.name, krystal.healing,krystal.chakra, krystal.image, krystal.numerology, krystal.category, krystal.is_favorite]
       );
@@ -37,7 +37,7 @@ const createKrystal = async (krystal) => {
   // UPDATE Route - DONE
 const updateKrystal = async (krystal, id) => {
     try {
-      const updatedKrystal = await db.one(
+      const updatedKrystal = await db.oneOrNone(
         "UPDATE krystals SET name=$1, healing=$2, chakra=$3, image=$4, numerology=$5, category=$6, is_favorite=$7  WHERE id=$8 RETURNING *",
         [
           krystal.name,
@@ -61,7 +61,7 @@ const updateKrystal = async (krystal, id) => {
   // DELETE Route - DONE
   const deleteKrystal = async (id) => {
     try {
-      const deletedKrystal = await db.one(
+      const deletedKrystal = await db.oneOrNone(
         "DELETE FROM krystals WHERE id=$1 RETURNING *",
         id
       );
