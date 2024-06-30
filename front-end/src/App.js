@@ -3,6 +3,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer";
+
 import About from "./Components/About";
 import Krystals from "./Components/Krystals";
 import KrystalDetails from "./Components/KrystalDetails";
@@ -33,6 +35,7 @@ function App() {
             <Route path="*" element={<FourOFour />} />
           </Routes>
         </main>
+        <Footer />
       </Router>
       </UserProvider>
     </div>
